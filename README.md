@@ -25,12 +25,7 @@
 
 建议使用更及时、更完善、更全面的 [**可莉仓库**](https://github.com/luestr/ProxyResource/blob/main/README.md) 和 [**可莉插件中心**](https://hub.kelee.one) 。
 
-<a href="https://next.ossinsight.io/widgets/official/compose-last-28-days-stats?repo_id=1124110281" target="_blank" style="display: block" align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://next.ossinsight.io/widgets/official/compose-last-28-days-stats/thumbnail.png?repo_id=1124110281&image_size=auto&color_scheme=dark" width="655" height="auto">
-    <img alt="Performance Stats of sooyaaabo/LoonLab - Last 28 days" src="https://next.ossinsight.io/widgets/official/compose-last-28-days-stats/thumbnail.png?repo_id=1124110281&image_size=auto&color_scheme=light" width="655" height="auto">
-  </picture>
-</a>
+![Alt](https://repobeats.axiom.co/api/embed/a9fbcbd9237e2bdd00585d66ef6fdafd5300ef1f.svg "Repobeats analytics image")
 
 
 ## 使用声明

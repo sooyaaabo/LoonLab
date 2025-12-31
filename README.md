@@ -437,4 +437,4 @@
 
 ## 星标历史
 
-[![Star History Chart](https://api.star-history.com/svg?repos=sooyaaabo/LoonLab&type=Date)](https://www.star-history.com/#sooyaaabo/LoonLab&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=sooyaaabo/LoonLab&type=date&legend=top-left)](https://www.star-history.com/#sooyaaabo/LoonLab&type=date&legend=top-left)

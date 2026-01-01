@@ -283,6 +283,7 @@
             <th width="100px" align="center">季付</th>
             <th width="100px" align="center">半年付</th>
             <th width="100px" align="center">年付</th>
+            <th width="100px" align="center">速率限制</th>
         </tr>
         <tr>
             <td align="center">Mini</td>
@@ -291,6 +292,7 @@
             <td align="center">×</td>
             <td align="center">×</td>
             <td align="center">¥78</td>
+            <td align="center">150Mbps</td>
         </tr>
         <tr>
             <td align="center">Small</td>
@@ -299,30 +301,43 @@
             <td align="center">¥36</td>
             <td align="center">¥69</td>
             <td align="center">¥132</td>
+            <td align="center">300Mbps</td>
         </tr>
         <tr>
             <td align="center">Medium</td>
             <td align="center">200G</td>
-            <td align="center">¥22</td>
-            <td align="center">¥66</td>
-            <td align="center">¥127</td>
-            <td align="center">¥243</td>
+            <td align="center">¥24</td>
+            <td align="center">¥72</td>
+            <td align="center">¥132</td>
+            <td align="center">¥264</td>
+            <td align="center">300Mbps</td>
         </tr>
         <tr>
             <td align="center">Large</td>
             <td align="center">300G</td>
-            <td align="center">¥32</td>
-            <td align="center">¥96</td>
-            <td align="center">¥184</td>
-            <td align="center">¥353</td>
+            <td align="center">¥36</td>
+            <td align="center">¥108</td>
+            <td align="center">¥198</td>
+            <td align="center">¥396</td>
+            <td align="center">500Mbps</td>
         </tr>
         <tr>
             <td align="center">Plus</td>
             <td align="center">500G</td>
-            <td align="center">¥50</td>
-            <td align="center">¥150</td>
-            <td align="center">¥288</td>
-            <td align="center">¥566</td>
+            <td align="center">¥58</td>
+            <td align="center">¥174</td>
+            <td align="center">¥319</td>
+            <td align="center">¥638</td>
+            <td align="center">♾️Mbps</td>
+        </tr>
+        <tr>
+            <td align="center">Plus</td>
+            <td align="center">1T</td>
+            <td align="center">¥108</td>
+            <td align="center">¥324</td>
+            <td align="center">¥594</td>
+            <td align="center">¥1188</td>
+            <td align="center">♾️Mbps</td>
         </tr>
     </table>
 </div>

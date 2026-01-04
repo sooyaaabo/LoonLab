@@ -344,7 +344,6 @@
 
 - **购买方式**<br>
 点击 [AshNet官网](https://portal.ash.do/#/register?code=igbGTl5n) 购买，新用户85折优惠码`Ash`<br>
-元旦85折优惠码（2025.12.31-2026.1.3）`元旦快乐`
 
 - **联系方式**<br>
 官方频道：[@Ash_NOC](https://t.me/Ash_NOC)<br>

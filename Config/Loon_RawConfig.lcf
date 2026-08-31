@@ -1,0 +1,171 @@
+# Loon 配置文件
+# 描述：个人使用的 Loon 配置文件，可根据实际需求进行调整。
+# 日期: 2026-06-30 00:00
+# 作者: sooyaaabo（恩秀）
+# 版本: 3.5.0(975)
+# 主页: https://github.com/sooyaaabo/LoonLab/blob/main/README.md
+# 插件: https://loonlab.103516.xyz/Plugin/
+# App图标库: https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App-Icon.json
+# Flag图标库: https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Flag-Icon.json
+# Loon官方文档: https://nsloon.app/docs/intro
+# Loon官方教程: https://coffee-elderberry-22b.notion.site/Loon-71747252d5054551a8cd10924064899c
+# Loon第三方知识库：https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/b6047d8b-621c-44af-bfa6-a28d35bcf928
+# 参考链接: https://kelee.one/Tool/Loon/Lcf/zh-CN/Loon_Auto_Select_Config_By_iKeLee.lcf
+
+[General]
+# IP查询模式
+ip-mode = v4-only
+# TUN IPv6配置
+ipv6-vif = off
+# DNS server
+dns-server = system,223.5.5.5,223.6.6.6,119.29.29.29,114.114.114.114
+# DoH server
+doh-server = https://dns.alidns.com/dns-query,https://sm2.doh.pub/dns-query
+# DoH3 server
+doh3-server = h3://dns.alidns.com/dns-query
+# DoQ server
+doq-server = quic://dns.alidns.com:853
+# Wi-Fi共享开启时http服务的端口
+wifi-access-http-port = 6154
+# Wi-Fi共享开启时socks5服务的端口
+wifi-access-socks5-port = 6153
+# 是否允许Wi-Fi下共享网络
+allow-wifi-access = false
+# 是否开启对局域网中其他设备的请求进行MITM
+mitm-on-wifi-access = false
+# 节点测速时的超时秒数
+test-timeout = 5
+# 网络接口
+interface-mode = auto
+# 域名拦截行为
+domain-reject-mode = DNS
+# DNS拦截方式
+dns-reject-mode = LoopbackIP
+# SNI辅助规则匹配
+sni-sniffing = true
+# 直连时丢弃STUN
+disable-stun = true
+# UDP回落策略
+udp-fallback-mode = REJECT
+# 策略切换时关闭连接
+disconnect-on-policy-change = false
+# 直连测试URL
+internet-test-url = http://connectivitycheck.platform.hicloud.com/generate_204
+# 节点测试URL
+proxy-test-url = http://latency-test.skk.moe/endpoint
+# 资源解析器
+resource-parser = https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-parser.loon.min.js
+# GeoIP数据库
+geoip-url = https://loon.103516.xyz/GeoData/Country-Masaiki.mmdb
+# ASN数据库
+ipasn-url = https://loon.103516.xyz/GeoData/GeoLite2-ASN-P3TERX.mmdb
+# 绕过代理
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,e.crashlynatics.com
+# 绕过路由
+bypass-tun = 10.0.0.0/8,100.64.0.0/10,127.0.0.0/8,169.254.0.0/16,172.16.0.0/12,192.0.0.0/24,192.0.2.0/24,192.88.99.0/24,192.168.0.0/16,198.51.100.0/24,203.0.113.0/24,224.0.0.0/4,255.255.255.255/32
+
+[Proxy]
+
+
+[Remote Proxy]
+
+
+[Remote Filter]
+Sub-ALL = NameRegex, FilterKey = "^(?=.*(.))(?!.*((?i)群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|好友|失联|总计|重置|重新|设置|(\b(USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic)(\d+)?\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
+Sub-HK = NameRegex, FilterKey = "^(?=.*((?i)🇭🇰|香港|(\b(HK|HKG|Hong)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+Sub-MO = NameRegex, FilterKey = "^(?=.*((?i)🇲🇴|澳门|(\b(MO|MAC|Oman|Macau|Macao)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+Sub-TW = NameRegex, FilterKey = "^(?=.*((?i)🇹🇼|台湾|(\b(TW|TWN|Tai|Taiwan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+Sub-JP = NameRegex, FilterKey = "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|JPN|Japan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+Sub-KR = NameRegex, FilterKey = "^(?=.*((?i)🇰🇷|韩国|韓|首尔|(\b(KR|KOR|Korea)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+Sub-SG = NameRegex, FilterKey = "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|SGP|Singapore)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+Sub-US = NameRegex, FilterKey = "^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|USA|United States)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|🎮|(\b(GAME)\b))).*$"
+Sub-RA = NameRegex, FilterKey = "^(?=.*(.))(?!.*((?i)🇭🇰|🇲🇴|🇹🇼|🇯🇵|🇰🇷|🇸🇬|🇺🇸|香港|澳门|台湾|日本|川日|东京|大阪|泉日|埼玉|韩国|韓|首尔|新加坡|狮|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|超时|收藏|福利|好友|失联|总计|重置|重新|设置|回国|校园|游戏|🎮|(\b(HK|HKG|Hong|MO|MAC|Oman|Macau|Macao|TW|TWN|Tai|Taiwan|JP|JPN|Japan|KR|KOR|Korea|SG|SGP|Singapore|US|USA|United States|America|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author|Traffic)(\d+)?\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$"
+
+[Proxy Group]
+手动选择 = select,DIRECT,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,Rare Areas,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Other/Select.png
+时延优选 = url-test,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Other/UrlTest.png
+故障转移 = fallback,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,interval = 60,max-timeout = 2000,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Other/Fallback.png
+负载均衡 = load-balance,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,interval = 60,max-timeout = 2000,algorithm = pcc,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Other/LoadBalance.png
+Global = select,Sub-ALL,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Flag/WorldMap.png
+Hong Kong = url-test,Sub-HK,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Flag/HongKong.png
+Macao = url-test,Sub-MO,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Flag/Macao.png
+Taiwan = url-test,Sub-TW,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Flag/Taiwan.png
+Japan = url-test,Sub-JP,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Flag/Japan.png
+South Korea = url-test,Sub-KR,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Flag/SouthKorea.png
+Singapore = url-test,Sub-SG,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Flag/Singapore.png
+United States = url-test,Sub-US,interval = 60,tolerance = 50,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Flag/UnitedStates.png
+Rare Areas = select,Sub-RA,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/Flag/UnitedNations.png
+Apple = select,DIRECT,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Apple-02.png
+AI = select,Sub-JP,Sub-SG,Sub-US,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Anthropic.png
+TikTok = select,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/TikTok-02.png
+CryptoCurrency = select,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,Rare Areas,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Bitcoin-02.png
+Telegram = select,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Telegram-01.png
+GitHub = select,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/GitHub-02.png
+Google = select,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Google.png
+Microsoft = select,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Microsoft.png
+Instagram = select,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Instagram-02.png
+X = select,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/Twitter-02.png
+YouTube = select,Hong Kong,Macao,Taiwan,Japan,South Korea,Singapore,United States,img-url = https://raw.githubusercontent.com/sooyaaabo/IconLibrary/main/App/YouTube.png
+
+[Proxy Chain]
+
+
+[Rule]
+FINAL,故障转移
+# Local Rule
+# Type:DOMAIN-SUFFIX,DOMAIN,DOMAIN-KEYWORD,USER-AGENT,URL-REGEX,IP-CIDR,IP-CIDR6,IP-ASN
+# Strategy:DIRECT,Proxy,REJECT
+# Options:no-resolve(no-resolve(only for cidr))
+# IP-CIDR, 192.168.0.0/16, DIRECT
+# IP-CIDR, 10.0.0.0/8, DIRECT
+# IP-CIDR, 172.16.0.0/12, DIRECT
+# IP-CIDR, 127.0.0.0/8, DIRECT
+# IP-CIDR6, 2000::/3, DIRECT
+# 请勿在此添加GEOIP, cn, DIRECT
+# 请勿修改CN REGION规则的排序甚至删除
+
+[Remote Rule]
+https://rule.kelee.one/Loon/WeChat.lsr, policy=DIRECT, tag=WeChat, enabled=true
+https://loon.103516.xyz/Rule/Apple.lsr, policy=Apple, tag=Apple, enabled=true
+https://loon.103516.xyz/Rule/AI.lsr, policy=AI, tag=AI, enabled=true
+https://loon.103516.xyz/Rule/TikTok.lsr, policy=TikTok, tag=TikTok, enabled=true
+https://loon.103516.xyz/Rule/CryptoCurrency.lsr, policy=CryptoCurrency, tag=CryptoCurrency, enabled=true
+https://rule.kelee.one/Loon/Telegram.lsr, policy=Telegram, tag=Telegram, enabled=true
+https://rule.kelee.one/Loon/GitHub.lsr, policy=GitHub, tag=GitHub, enabled=true
+https://rule.kelee.one/Loon/Google.lsr, policy=Google, tag=Google, enabled=true
+https://rule.kelee.one/Loon/Microsoft.lsr, policy=Microsoft, tag=Microsoft, enabled=true
+https://rule.kelee.one/Loon/Instagram.lsr, policy=Instagram, tag=Instagram, enabled=true
+https://rule.kelee.one/Loon/Twitter.lsr, policy=X, tag=X, enabled=true
+https://rule.kelee.one/Loon/YouTube.lsr, policy=YouTube, tag=YouTube, enabled=true
+https://rule.kelee.one/Loon/Global.lsr, policy=United States, tag=Global, enabled=true
+https://rule.kelee.one/Loon/ChinaMax.lsr, policy=DIRECT, tag=ChinaMax, enabled=true
+https://kelee.one/Tool/Loon/Lsr/LAN_SPLITTER.lsr, policy=DIRECT, tag=LAN, enabled=true
+https://kelee.one/Tool/Loon/Lsr/REGION_SPLITTER.lsr, policy=DIRECT, tag=CN REGION, enabled=true
+
+[Host]
+iosapps.itunes.apple.com = iosapps.itunes.apple.com.download.ks-cdn.com
+updates.cdn-apple.com = updates.cdn-apple.com.download.ks-cdn.com
+updates.g.aaplimg.com = updates.cdn-apple.com.download.ks-cdn.com
+
+[Rewrite]
+
+
+[Script]
+
+
+[Remote Script]
+
+
+[Plugin]
+https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx, pin=true, enabled=true
+https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx, pin=true, enabled=true
+https://loon.103516.xyz/Plugin/Sub-Store.lpx, policy=故障转移, enabled=true
+https://loon.103516.xyz/Plugin/Script-Hub.lpx, policy=故障转移, enabled=true
+https://loon.103516.xyz/Plugin/BoxJs.lpx, policy=故障转移, enabled=true
+
+[MITM]
+hostname = 
+ca-p12 = 
+ca-passphrase = 
+skip-server-cert-verify = false
